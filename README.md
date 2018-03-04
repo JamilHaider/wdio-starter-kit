@@ -1,6 +1,24 @@
-[![Build Status](https://travis-ci.org/klamping/wdio-starter-kit.svg?branch=master)](https://travis-ci.org/klamping/wdio-starter-kit)
-[![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/Flet/semistandard)
+This solution is based on the starter kit by Kevin Lamping at [1].
 
+* Clone this repo, cd into it, and run `npm init`
+
+* To setup selenium server
+
+ ```
+ > npm install -g selenium-standalone
+ > selenium-standalone install
+ > selenium-standalone start
+ ```
+
+* To run tests: `npm test -- wdio.conf.local.js`
+
+* To run specific tests: `npm test -- wdio.conf.local.js --spec justin.spec.js`
+
+* Comparing URLs is tricky as some url have host as 'www' others do not. Similarly some but not all urls have trailing '/'
+
+1. https://github.com/klamping/wdio-starter-kit/
+
+===============================================================
 # WebdriverIO Starter Kit
 
 Boilerplate repo for quick set up of WebdriverIO test scripts with TravisCI, Sauce Labs and Visual Regression Testing
